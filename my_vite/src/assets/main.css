@@ -1,0 +1,47 @@
+/* 全局样式和 CSS 变量 */
+
+:root {
+  --primary-color: #4CAF50;
+  --secondary-color: #8f7a66;
+  --background-color: #faf8ef;
+  --dark-text-color: #776e65;
+  --light-text-color: #f9f6f2;
+  --board-bg-color: #bbada0;
+  --border-radius: 5px;
+  --font-family: 'Arial', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  color: var(--dark-text-color);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  background: var(--secondary-color);
+  color: var(--light-text-color);
+  border: none;
+  padding: 10px 20px;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+button:hover {
+  filter: brightness(1.1);
+}
+
+.g-show {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
